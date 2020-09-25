@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="public/css/swiper.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="public/style.css">
+
+  <script src="public/js/custom.js"></script>
+
+</head>
+<body class="single-page blog-page">
+    <header class="site-header">
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="public/images/DISCOVERY.PNG" alt="logo"></a>
+                            <a class="d-block" href="index.html" rel="home"><img class="d-block" src="public/images/logo.png" alt="logo"></a>
+                        </div><!-- .site-branding -->
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                                <li class="current-menu-item"><a href="index.html">HOME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                                <li><a href="services.html">SERVICES</a></li>
+                                <li><a href="register.html">REGISTER</a></li>
+                                <li><a href="login.html">LOG IN</a></li>
+                            </ul>
+                        </nav><!-- .site-navigation -->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Register</h1>
+
+                    <div class="breadcrumbs">
+                        <ul class="d-flex flex-wrap align-items-center p-0 m-0">
+                            <li>Existing User?</li>
+                            <li><a href="login.html">Login</a></li>
+                            
+                        </ul>
+                    </div><!-- .breadcrumbs -->
+                </div>
+            </div>
+        </div>
+
+        <img class="header-img" src="public/images/news-bg.png" alt="">
+    </header><!-- .site-header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                    <div class="row">
+                         
+                        
+                        <div class="contact">
+                            <h3 id="status">Let's get you started</h3>
+                          
+                            <form class="form-signin" action="/signUp/api" method="POST">
+                                <div class="form-label-group">
+                                    <label for="inputEmail">Username</label>
+                                    <input type="text" name="username" id="username" class="form-control"
+                                        placeholder="Username" required autofocus>
+                                    
+                                </div>
+                    
+                                <div class="form-label-group">
+                                  <label for="inputEmail">Email address</label>
+                                  <input type="email" name="email" id="email" class="form-control"
+                                      placeholder="Email address" required autofocus>
+                                  
+                                </div>
+                    
+                                <div class="form-label-group">
+                                  <label for="inputFirstName">First Name</label>
+                                  <input type="text" name="firstName" id="firstName" class="form-control"
+                                      placeholder="First Name" required autofocus>
+                                  
+                                </div>
+                    
+                                <div class="form-label-group">
+                                  <label for="inputLastName">Last Name</label>
+                                  <input type="text" name="lastName" id="lastName" class="form-control"
+                                      placeholder="Last Name" required autofocus>
+                                </div>
+                    
+                    
+                                <div class="form-label-group">
+                                  <label for="inputMobileNumber">Mobile Number</label>
+                                  <input type="text" name="mobileNumber" id="mobileNumber" class="form-control"
+                                      placeholder="082-123-4567" required autofocus>
+                                </div>
+                                
+                                <div class="form-label-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" name= "password" id="password" class="form-control"
+                                        placeholder="Password" required
+                                        onkeyup='checkPasswordLength();'
+                                    >
+                                    <span id='passwordMessage'></span>
+                                    
+                                </div>
+                                
+                                <div class="form-label-group">
+                                    <label for="inputPassword">Confirm password</label>
+                                    <input type="password" name="confirmPassword" id="confirmPassword" class="form-control"
+                                        placeholder="Confirm Password" required
+                                        onkeyup='checkPasswordMatch();'
+                                        >
+                                    <span id='confirmPasswordMessage'></span>	
+                                </div>
+                    
+                                <button type="submit"
+                                    class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2"
+                                    type="submit" id='signUpButton'>Sign Up</button>
+                                <hr class="my-4">
+                            </form>
+                          </div>
+
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="foot-about">
+                            <h2><a href="#"><img src="public/images/DISCOVERY.PNG" alt=""></a></h2>
+                            <h2><a href="#"><img src="public/images/logo.png" alt=""></a></h2>
+
+                    
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><span>Addtress:</span>1 Discovery Place, Sandton, South Africa</li>
+                                <li><span>Phone:</span>+27 (01)1 529 7247</li>
+                                <li><span>Email:</span>healthinfo@discovery.co.za</li>
+                            </ul>
+                        </div>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-links">
+                            <h2>Usefull Links</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="news.html">FAQ</a></li>
+                               
+                            </ul>
+                          
+                        </div><!-- .foot-links -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+            <div class='container'>
+                <ul>
+                    <a href="https://www.facebook.com/discoverysouthafrica/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="http://www.linkedin.com/company/discovery-limited" target="_blank"  class=" fa fa-linkedin"></a>
+                    <a href="https://twitter.com/Discovery_SA" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/user/DiscoverySA" target="_blank" class="fa fa-youtube"></a>
+                    <a href="https://za.pinterest.com/vitalitysa/" target="_blank" class="fa fa-pinterest"></a>
+                    <a href="https://www.instagram.com/discovery_sa/" target="_blank"  class="fa fa-instagram"></a>
+                </ul>
+            </div>
+        </div><!-- .footer-widgets -->
+    </footer><!-- .site-footer -->
+    <script type='text/javascript' src='public/js/jquery.js'></script>
+    <script type='text/javascript' src='public/js/jquery.collapsible.min.js'></script>
+    <script type='text/javascript' src='public/js/swiper.min.js'></script>
+    <script type='text/javascript' src='public/js/jquery.countdown.min.js'></script>
+    <script type='text/javascript' src='public/js/circle-progress.min.js'></script>
+    <script type='text/javascript' src='public/js/jquery.countTo.min.js'></script>
+    <script type='text/javascript' src='public/js/jquery.barfiller.js'></script>
+    <script type='text/javascript' src='public/js/custom.js'></script>
+</body>
+</html>
