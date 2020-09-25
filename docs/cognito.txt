@@ -1,0 +1,13 @@
+Pool Id us-east-1_quR0MkouQ
+Pool ARN arn:aws:cognito-idp:us-east-1:098032707520:userpool/us-east-1_quR0MkouQ
+
+
+http://dis-medmergency-app.s3-website-us-east-1.amazonaws.com/index.html
+
+
+
+App client id: 7gsto9ko5ocn5nhqsktnsp3oq4
+
+
+
+Amazon Resource Name (ARN)	arn:aws:dynamodb:us-east-1:098032707520:table/medmergency
